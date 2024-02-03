@@ -1,0 +1,8 @@
+.counter {
+	margin-bottom: 30px;
+}
+
+.counter_plus, .counter_minus, .counter_reset {
+	padding: 3px 7px;
+	margin: 5px;
+}
