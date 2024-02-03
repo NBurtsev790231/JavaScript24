@@ -9,15 +9,19 @@
 <body>
 	<h1>Calculate</h1>
 	<form name = 'calculate'>
-		<input type = 'number' name = 'numberA'> <p>
-		<input type = 'number' name = 'numberB'> <p>
-		<input type = 'button' value = '+' onClick = 'calculation("+")'>
-		<input type = 'button' value = '-' onClick = 'calculation("-")'>
-		<input type = 'button' value = '*' onClick = 'calculation("*")'>
-		<input type = 'button' value = '/' onClick = 'calculation("/")'>
-		<input type = 'button' value = 'reset' onClick = 'calculation("reset")'>
+		<p class="calculator_output" id = 'output'></p>
+		<div class="calculator_num">
+		<input type = 'number' name = 'numberA'>
+		<input type = 'number' name = 'numberB'>
+		</div>
+		<div class="calculator_item">
+		<input class="calculator_btn" type = 'button' value = '+' onClick = 'calculation("+")'>
+		<input class="calculator_btn" type = 'button' value = '-' onClick = 'calculation("-")'>
+		<input class="calculator_btn" type = 'button' value = '*' onClick = 'calculation("*")'>
+		<input class="calculator_btn" type = 'button' value = '/' onClick = 'calculation("/")'>
+		<input class="calculator_btn" type = 'button' value = 'reset' onClick = 'calculation("reset")'>
+		</div>
 	</form>
-	<p id = 'output'>
 	<script src="calculator.js" defer></script>
 </body>
 </html>
