@@ -6,6 +6,7 @@ const user = {
 	name: 'Bob', age: 26,
 }
 
+
 function people (name, age, work) {
 	return {
 		name,
@@ -13,6 +14,5 @@ function people (name, age, work) {
 		work,
 	}
 };
-
 
 console.log(people('dusty', 39, 'frontend developer'));
