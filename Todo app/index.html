@@ -8,22 +8,37 @@
 	<title>Todo app</title>
 </head>
 <body>
-	<h1>Список ваших задач</h1>
-	<main>
-		<p class="todo_title">Список задач пуст</p>
-		<section class="todo_list">
-			<p class="todo_text">Купить молоко</p>
-			<div class="todo_button">
-				<button>Выполнено</button>
-				<button>Удалить</button>	
-			</div>
-		</section>
+	<main class="container">
+		<h1>Список ваших задач</h1>
+		<section class="task">
+			<ul id="tasklist" class="task_list">
+				<li id="emptyList" class="empty_list">
+					<img src="Img/sleep-cat.png" alt="sleep-cat" width="200" height="150">
+					<p class="empty_list__text">Список задач пуст</p>
+				</li>
 
-		<section>
-			<form action="#">
-				<label>Добавить новую задачу</label>
-				<input type="text" placeholder="Текст задачи">
-				<button>Добавить</button>
+				<li class="task_list__item">
+					<span class="task-title">Купить молоко</span>
+					<div class="task_list__button">
+						<button type="button" data-action="done" class="button_action">
+							<img src="Img/icon-done-green.png" alt="icon-done-green" width="50" height=50">
+						</button>
+						<button type="button" data-action="delete" class="button_action">
+							<img src="Img/icon-delete-red.png" alt="icon-delete-red" width="50" height="50">
+						</button>
+					</div>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="card">
+			<div class="card-header">Добавить новую задачу</div>
+			<form action="#" id="form">
+				<div class="form_item">
+					<input type="text" class=form_text" id="taskInput" placeholder="Текст задачи">
+					<small id="smallHelp" class="form_placeholder">Дата, время, результат</small>
+				</div>
+				<button type="submit" class="button_form">Добавить</button>
 			</form>
 		</section>
 	</main>
