@@ -1,3 +1,8 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	border: 2px solid #000000;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -5,4 +10,60 @@ body {
 	width: 900px;
 	height: 600px;
 	margin: 20px auto;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 10px;
+}
+
+.task {
+	border: 1px solid #000000;
+	padding: 10px;
+	margin: 10px;
+}
+
+.empty_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+.task_list__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/*border: 1px solid #000000;*/
+}
+
+.task_list__item,.task_title {
+	font-size: 17px;
+	padding: 20px 2px;
+}
+
+.button_action {
+	margin: 3px;
+}
+
+
+.card {
+	border: 1px solid #000000;
+	padding: 10px;
+	margin: 10px;
+}
+
+.card_header {
+	font-size: 17px;
+	padding: 10px;
+}
+
+.form_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px;
 }
