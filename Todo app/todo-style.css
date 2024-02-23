@@ -3,19 +3,24 @@
 	padding: 0px;
 }
 
-body {
-	border: 2px solid #000000;
+
+.container {
+	/*border: 2px solid #000000;*/
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-style: italic;
 	width: 900px;
-	height: 600px;
+	height:600px;
 	margin: 20px auto;
+	background-color: #f4f4f4;
+	border-radius: 5px;
 }
+
 
 h1 {
 	font-size: 30px;
 	margin: 10px;
 }
+
 
 .task {
 	border: 1px solid #000000;
@@ -23,13 +28,26 @@ h1 {
 	margin: 10px;
 }
 
+
 .empty_list {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 25px;
 }
+
+.empty_list__text {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+
+.background_image {
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+
 
 .task_list__item {
 	display: flex;
@@ -39,10 +57,12 @@ h1 {
 	/*border: 1px solid #000000;*/
 }
 
+
 .task_list__item,.task_title {
 	font-size: 17px;
 	padding: 20px 2px;
 }
+
 
 .button_action {
 	margin: 3px;
@@ -52,13 +72,15 @@ h1 {
 .card {
 	border: 1px solid #000000;
 	padding: 10px;
-	margin: 10px;
+	margin: 20px 10px;
 }
+
 
 .card_header {
 	font-size: 17px;
 	padding: 10px;
 }
+
 
 .form_item {
 	display: flex;
@@ -66,4 +88,25 @@ h1 {
 	justify-content: flex-start;
 	align-items: flex-start;
 	padding: 10px;
+}
+
+input {
+	width: 180px;
+	height: 30px;
+}
+
+
+.form_placeholder {
+	padding: 10px 1px;
+	color: #535353;
+	font-size: 15px;
+}
+
+.button_form {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: 10px;
+	color: #ffffff;
+	background-color: #6a6ace;
+	border-radius: 5px;
 }
