@@ -29,4 +29,3 @@ const tasklistAdd = `<li id="task-list-item" class="task_list__item">
 taskList.insertAdjacentHTML('beforeend', tasklistAdd);
 console.log(tasklistAdd);
 });
-
